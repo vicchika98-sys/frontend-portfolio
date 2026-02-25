@@ -394,10 +394,10 @@ color: rgb(5, 125, 146)!important;
 
   .hero-content {
     top: 20%;
-    left: 0;
+  
     transform: translateY(-50%);
     width: 100%;
-    padding: 0 25px;   /* THIS is the important part */
+    
     text-align: left;
   }
 
