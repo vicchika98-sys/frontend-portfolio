@@ -89,11 +89,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .hero-slider {
-    height: 600px;   /* Reduced height for mobile */
-  }
-}
+
 .slide {
   position: absolute;
   top: 0;
@@ -396,7 +392,7 @@ color: rgb(5, 125, 146)!important;
 
   .hero-content {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
