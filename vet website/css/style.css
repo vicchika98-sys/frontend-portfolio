@@ -387,12 +387,12 @@ color: rgb(5, 125, 146)!important;
 @media (max-width: 768px) {
 
   .hero-slider {
-    height: 600px;
+    height: 800px;
   }
 
   .hero-content {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
