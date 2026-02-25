@@ -387,19 +387,20 @@ color: rgb(5, 125, 146)!important;
 @media (max-width: 768px) {
 
   .hero-slider {
-    height: 800px;
+    height: auto;          /* allow content to define height */
+    min-height: 600px;     /* gives enough space */
   }
 
   .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
+    position: relative;    /* REMOVE absolute on mobile */
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;       /* IMPORTANT */
     width: 100%;
-    padding: 0 20px;
+    padding: 80px 20px 40px;  /* top spacing */
     text-align: center;
-    opacity: 1; /* IMPORTANT */
+    opacity: 1;
   }
 
   .hero-heading {
