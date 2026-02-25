@@ -91,7 +91,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: 500px;   /* Reduced height for mobile */
+    height: 600px;   /* Reduced height for mobile */
   }
 }
 .slide {
@@ -391,7 +391,7 @@ color: rgb(5, 125, 146)!important;
 @media (max-width: 768px) {
 
   .hero-slider {
-    height: 450px;
+    height: 600px;
   }
 
   .hero-content {
