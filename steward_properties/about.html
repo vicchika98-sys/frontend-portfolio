@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About-The Steward Properties</title>
+<!-- SVG version -->
+<link rel="icon" type="image/svg+xml" href="images/favicon.png">
+   <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+   <!-- In <head> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <!-- Logo -->
+     <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="The Steward Properties Logo">
+        <h4>The Steward Properties</h4>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nowrap" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          <!-- Search Icon Button -->
+          <li class="nav-item">
+            <button id="searchToggle" class="btn btn-primary ms-lg-2" title="Search">
+              <i class="bi bi-search"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Hidden Search Bar with Send Button -->
+<div id="searchBar" class="bg-light py-3 d-none">
+  <div class="container">
+    <input id="siteSearchInput" type="text" class="form-control" placeholder="Search the site..." />
+    <div id="searchResults" class="mt-2"></div>
+  </div>
+</div>
+<!-- About Hero Section -->
+<section class="about-hero d-flex align-items-center" style="background-image: url('images/slide2.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <h1 class="display-4 fw-bold">About Us</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="card-slider-section py-5">
+  <div class="container">
+    <div class="swiper cardSwiper">
+      <div class="swiper-wrapper">
+        <!-- Card 1 -->
+        <div class="swiper-slide info-card text-center">
+          <div class="icon mb-3"><i class="bi bi-house-door-fill"></i></div>
+          <h5>Property Sales</h5>
+          <p>
+            Selling a property can be complex — but not with us. We help you market your home, land, or commercial asset to the right buyers using professional listings, local advertising, and client matchmaking. From valuation to final paperwork, The Steward Properties ensures a smooth, profitable, and transparent sales process.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="swiper-slide info-card text-center">
+          <div class="icon mb-3"><i class="bi bi-hammer"></i></div>
+          <h5>Construction</h5>
+          <p>We bring your dream projects to life with precision, professionalism, and a commitment to quality. From residential homes and commercial buildings to full-scale developments, our construction services combine expert engineering, modern design, and local insights to deliver durable, elegant structures</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="swiper-slide info-card text-center">
+          <div class="icon mb-3"><i class="bi bi-building"></i></div>
+          <h5>Leasing</h5>
+          <p>Whether you're looking to lease a residential apartment, office space, or retail unit, we connect you with high-value properties that match your lifestyle or business needs. Our leasing service ensures fair agreements, smooth transactions, and reliable support throughout your stay. We simplify the process so you can enjoy your new space with complete peace of mind.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="swiper-slide info-card text-center">
+          <div class="icon mb-3"><i class="bi bi-person-badge-fill"></i></div>
+          <h5>Brokerage</h5>
+          <p>Acting as your trusted real estate intermediary, we ensure every deal is smart, secure, and stress-free. Our brokerage team connects buyers, sellers, landlords, and tenants with vetted opportunities across Ghana. With deep market knowledge and negotiation expertise, we represent your best interest at every stage of the transaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dotted Divider -->
+<hr class="dotted-divider">
+
+<section class="about-section container my-5">
+  <div class="row align-items-center">
+    <!-- Image Left -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="images/about_bg.jpg" alt="About Us Image" class="img-fluid about-image border-blue">
+    </div>
+
+    <!-- Content Right -->
+    <div class="col-md-6 about-text-content">
+      <p class="about-subtitle">WELCOME TO STEWARD PROPERTIES</p>
+      <h2 class="about-title">Where Integrity Meets Real Estate Excellence.</h2>
+      <p class="about-text">
+        The Steward Properties is Ghana’s trusted real estate company, specializing in the sales, building, leasing, and brokering of high-end houses, commercial buildings, and prime lands across urban cities, particularly in Accra. Our mission is simple: To bring you the comfort and satisfaction you desire, whether it is for living, business, or investment.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Dotted Divider -->
+<hr class="dotted-divider">
+<section class="why-choose-us py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Why Choose Us</h2>
+      <p class="section-subtitle">What makes The Steward Properties your trusted real estate partner.</p>
+    </div>
+
+    <div class="row gy-4">
+      <!-- Mission -->
+      <div class="col-md-6">
+        <div class="info-box h-100 shadow-sm p-4">
+          <h4 class="mb-3"><i class="bi bi-bullseye me-2 text-primary"></i>Our Mission</h4>
+          <p>To deliver top-tier real estate solutions through integrity, innovation, and personalized service—helping clients make confident property decisions across Ghana.</p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-6">
+        <div class="info-box h-100 shadow-sm p-4">
+          <h4 class="mb-3"><i class="bi bi-eye me-2 text-success"></i>Our Vision</h4>
+          <p>To be Ghana’s most trusted name in real estate, known for excellence in service, ethical practices, and building lasting value for clients and communities.</p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="col-md-6">
+        <div class="info-box h-100 shadow-sm p-4">
+          <h4 class="mb-3"><i class="bi bi-gem me-2 text-warning"></i>Our Core Values</h4>
+          <ul class="mb-0 ps-3">
+            <li>Integrity & Honesty</li>
+            <li>Client-Centered Service</li>
+            <li>Professionalism & Excellence</li>
+            <li>Transparency</li>
+            <li>Innovation</li>
+            <li>Community Impact</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Why Choose Us -->
+      <div class="col-md-6">
+        <div class="info-box h-100 shadow-sm p-4">
+          <h4 class="mb-3"><i class="bi bi-hand-thumbs-up me-2 text-danger"></i>Why Choose Us</h4>
+          <p>We combine deep market knowledge, personalized support, and modern solutions to help you buy, build, lease, or invest in properties with complete peace of mind. Our clients return because we deliver value and results—every single time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div id="testimonials" class="section lb">
+  <div class="container">
+    
+    <!-- Section Title -->
+    <div class="section-title row text-center">
+      <div class="col-md-8 offset-md-2">
+        <h3>Happy Customers</h3>
+        <p class="lead">What our clients are saying about The Steward Properties.</p>
+      </div>
+    </div>
+
+    <!-- Carousel Row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="testimonial-wrapper d-flex align-items-center">
+          
+          <!-- Left Arrow -->
+          <button class="btn arrow-btn owl-prev me-3" aria-label="Previous">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <!-- Testimonial Carousel -->
+          <div class="testi-carousel owl-carousel owl-theme flex-grow-1">
+            
+            <!-- Testimonial 1 -->
+            <div class="testimonial clearfix">
+              <div class="desc">
+                <h3><i class="fa fa-quote-left"></i> Wonderful Support! <i class="fa fa-quote-right"></i></h3>
+                <p class="lead">They have got my project on time with a highly skilled, experienced, and professional team.</p>
+              </div>
+              <div class="testi-meta">
+                <h4>James Fernando <small>- Manager of Racer</small></h4>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial clearfix">
+              <div class="desc">
+                <h3><i class="fa fa-quote-left"></i> Awesome Services! <i class="fa fa-quote-right"></i></h3>
+                <p class="lead">Explained everything clearly and made the process smooth. Highly recommend their service.</p>
+              </div>
+              <div class="testi-meta">
+                <h4>Jacques Philips <small>- Designer</small></h4>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial clearfix">
+              <div class="desc">
+                <h3><i class="fa fa-quote-left"></i> Great & Talented Team! <i class="fa fa-quote-right"></i></h3>
+                <p class="lead">Professional, honest, and results-driven. A truly dedicated team!</p>
+              </div>
+              <div class="testi-meta">
+                <h4>Venanda Mercy <small>- New York City</small></h4>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial clearfix">
+              <div class="desc">
+                <h3><i class="fa fa-quote-left"></i> Seamless Experience! <i class="fa fa-quote-right"></i></h3>
+                <p class="lead">From the first meeting to the final handover, The Steward Properties made the entire process smooth and stress-free. I couldn’t be happier with the outcome.</p>
+              </div>
+              <div class="testi-meta">
+                <h4>Linda Owusu <small>- Accra, Ghana</small></h4>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Arrow -->
+          <button class="btn arrow-btn owl-next ms-3" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+ 
+
+
+<footer class="site-footer mt-5 pt-5">
+  <div class="footer-top container">
+    <div class="row">
+      <!-- Column 1: About -->
+      <div class="col-md-3">
+        <p class="footer-text">
+          Your trusted partner in Ghanaian real estate. We specialize in sales, construction, leasing, and brokerage of prime properties in Accra and beyond.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links with Icons -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="index.html"><i class="fas fa-home me-2"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle me-2"></i> About Us</a></li>
+          <li><a href="services.html"><i class="fas fa-cogs me-2"></i> Services</a></li>
+          <li><a href="portfolio.html"><i class="fas fa-briefcase me-2"></i> Portfolio</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone me-2"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Property Types -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Properties</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#"><i class="fas fa-house-user me-2"></i> Residential</a></li>
+          <li><a href="#"><i class="fas fa-city me-2"></i> Commercial</a></li>
+          <li><a href="#"><i class="fas fa-warehouse me-2"></i> Land</a></li>
+          <li><a href="#"><i class="fas fa-store me-2"></i> Retail</a></li>
+          <li><a href="#"><i class="fas fa-building me-2"></i> Apartments</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Contact Us</h5>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="fas fa-map-marker-alt me-2"></i> East Legon, Accra - Ghana</li>
+          <li><i class="fas fa-phone me-2"></i> +233 24 000 0000</li>
+          <li><i class="fas fa-envelope me-2"></i> info@stewardproperties.com</li>
+        </ul>
+        <div class="footer-social mt-3">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 The Steward Properties. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<!-- JS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Your External JS -->
+<script src="js/script.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

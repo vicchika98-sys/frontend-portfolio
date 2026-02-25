@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties-The Steward Properties</title>
+<!-- SVG version -->
+<link rel="icon" type="image/svg+xml" href="images/favicon.png">
+   <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+   <!-- In <head> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <!-- Logo -->
+   <a class="navbar-brand" href="index.html">
+        <img src="images/logo.jpg" alt="The Steward Properties Logo">
+        <h4>The Steward Properties</h4>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nowrap" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          <!-- Search Icon Button -->
+          <li class="nav-item">
+            <button id="searchToggle" class="btn btn-primary ms-lg-2" title="Search">
+              <i class="bi bi-search"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Hidden Search Bar with Send Button -->
+<div id="searchBar" class="bg-light py-3 d-none">
+  <div class="container">
+    <input id="siteSearchInput" type="text" class="form-control" placeholder="Search the site..." />
+    <div id="searchResults" class="mt-2"></div>
+  </div>
+</div>
+<!-- About Hero Section -->
+<section class="about-hero d-flex align-items-center" style="background-image: url('images/slide2.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <h1 class="display-4 fw-bold">Properties</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dotted Divider -->
+
+  <section id="blog" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Properties</h2>
+      <p class="section-subtitle">Explore premium properties tailored to your needss</p>
+    </div>
+</section>
+
+<!-- Properties Grid Section -->
+<section class="property-listing py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Property Card (Repeat 9 times) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card property-card border-primary shadow-sm h-100">
+          <div class="position-relative">
+            <img src="images/home1.jpg" alt="Property Image" class="card-img-top property-img" onclick="openFullView(this)">
+            <span class="price-badge bg-primary text-white position-absolute top-0 start-0 px-3 py-1">$120,000</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Modern 3-Bedroom House</h5>
+            <p class="card-text">Spacious home with contemporary finishing, ample compound, and secured environment.</p>
+            <p class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i> East Legon, Accra</p>
+          </div>
+        </div>
+      </div>
+            <!-- Property Card (Repeat 9 times) -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card property-card border-primary shadow-sm h-100">
+                <div class="position-relative">
+                  <img src="images/home2.jpg" alt="Property Image" class="card-img-top property-img" onclick="openFullView(this)">
+                  <span class="price-badge bg-primary text-white position-absolute top-0 start-0 px-3 py-1">$170,000</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Executive 4-Bedroom Duplex</h5>
+                  <p class="card-text">Luxurious duplex with en-suite rooms, open-plan living, fitted kitchen, and a serene neighborhood.</p>
+                  <p class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i> Cantonments, Accra</p>
+                </div>
+              </div>
+            </div>
+                  <!-- Property Card (Repeat 9 times) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card property-card border-primary shadow-sm h-100">
+          <div class="position-relative">
+            <img src="images/home3.jpg" alt="Property Image" class="card-img-top property-img" onclick="openFullView(this)">
+            <span class="price-badge bg-primary text-white position-absolute top-0 start-0 px-3 py-1">$100,000</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Affordable 2-Bedroom Apartment</h5>
+            <p class="card-text">Ideal for young professionals or small families, featuring modern finishes and proximity to amenities.</p>
+            <p class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i>Spintex Road, Accra</p>
+          </div>
+        </div>
+      </div>
+            <!-- Property Card (Repeat 9 times) -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card property-card border-primary shadow-sm h-100">
+                <div class="position-relative">
+                  <img src="images/home4.jpg" alt="Property Image" class="card-img-top property-img" onclick="openFullView(this)">
+                  <span class="price-badge bg-primary text-white position-absolute top-0 start-0 px-3 py-1">$120,000</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Beachfront 5-Bedroom Villa</h5>
+                  <p class="card-text">Stunning sea views, large windows, private pool, and a tranquil beachfront atmosphere.</p>
+                  <p class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i> Kokrobite, Accra</p>
+                </div>
+              </div>
+            </div>
+                  <!-- Property Card (Repeat 9 times) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card property-card border-primary shadow-sm h-100">
+          <div class="position-relative">
+            <img src="images/home5.jpg" alt="Property Image" class="card-img-top property-img" onclick="openFullView(this)">
+            <span class="price-badge bg-primary text-white position-absolute top-0 start-0 px-3 py-1">$130,000</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Newly Built Studio Apartment</h5>
+            <p class="card-text">Compact yet elegant studio with high-speed internet, security, and backup utilities.</p>
+            <p class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i> Osu, Accra</p>
+          </div>
+        </div>
+      </div>
+            <!-- Property Card (Repeat 9 times) -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card property-card border-primary shadow-sm h-100">
+                <div class="position-relative">
+                  <img src="images/home6.jpg" alt="Property Image" class="card-img-top property-img" onclick="openFullView(this)">
+                  <span class="price-badge bg-primary text-white position-absolute top-0 start-0 px-3 py-1">$80,000</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Furnished 3-Bedroom Townhouse</h5>
+                  <p class="card-text">Fully furnished home in a gated estate with 24/7 security, gym, and play area.</p>
+                  <p class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i> Airport Residential Area, Accra</p>
+                </div>
+              </div>
+            </div>
+
+</section>
+
+<!-- Image Modal Viewer -->
+<div id="imageModal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="" id="modalImage" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="site-footer mt-5 pt-5">
+  <div class="footer-top container">
+    <div class="row">
+      <!-- Column 1: About -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">The Steward Properties</h5>
+        <p class="footer-text">
+          Your trusted partner in Ghanaian real estate. We specialize in sales, construction, leasing, and brokerage of prime properties in Accra and beyond.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links with Icons -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="index.html"><i class="fas fa-home me-2"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle me-2"></i> About Us</a></li>
+          <li><a href="services.html"><i class="fas fa-cogs me-2"></i> Services</a></li>
+          <li><a href="portfolio.html"><i class="fas fa-briefcase me-2"></i> Portfolio</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone me-2"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Property Types -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Properties</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#"><i class="fas fa-house-user me-2"></i> Residential</a></li>
+          <li><a href="#"><i class="fas fa-city me-2"></i> Commercial</a></li>
+          <li><a href="#"><i class="fas fa-warehouse me-2"></i> Land</a></li>
+          <li><a href="#"><i class="fas fa-store me-2"></i> Retail</a></li>
+          <li><a href="#"><i class="fas fa-building me-2"></i> Apartments</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Contact Us</h5>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="fas fa-map-marker-alt me-2"></i> East Legon, Accra - Ghana</li>
+          <li><i class="fas fa-phone me-2"></i> +233 24 000 0000</li>
+          <li><i class="fas fa-envelope me-2"></i> info@stewardproperties.com</li>
+        </ul>
+        <div class="footer-social mt-3">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 The Steward Properties. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<!-- JS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Your External JS -->
+<script src="js/script.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
