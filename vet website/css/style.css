@@ -91,7 +91,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: 450px;   /* Reduced height for mobile */
+    height: 500px;   /* Reduced height for mobile */
   }
 }
 .slide {
@@ -420,6 +420,23 @@ color: rgb(5, 125, 146)!important;
     display: block;
     width: 100%;
     margin-bottom: 10px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .navbar-brand {
+    align-items: center;
+  }
+
+  .navbar-brand h3 {
+    font-size: 0.9rem;   /* smaller text */
+    margin-top: 0;
+    margin-left: 8px;
+  }
+
+  .navbar-brand img {
+    height: 45px;  /* smaller logo on mobile */
   }
 
 }
