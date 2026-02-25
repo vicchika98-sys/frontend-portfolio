@@ -87,7 +87,12 @@ body {
   position: relative;
   height: 620px;
   overflow: hidden;
-  font-family: 'Urbanist', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 450px;   /* Reduced height for mobile */
+  }
 }
 .slide {
   position: absolute;
@@ -385,13 +390,15 @@ color: rgb(5, 125, 146)!important;
 /* ========== MOBILE RESPONSIVE FIXES ========== */
 @media (max-width: 768px) {
 
+ @media (max-width: 768px) {
+
   .hero-content {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    padding: 0 20px;
-    text-align: center;
+    top: 20%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 25px;   /* THIS is the important part */
+    text-align: left;
   }
 
   .hero-heading {
@@ -402,8 +409,9 @@ color: rgb(5, 125, 146)!important;
   .hero-subtext {
     font-size: 0.95rem;
     line-height: 1.5;
-    width: 100%;
   }
+
+}
 
 }
   #services h2,
